@@ -42,9 +42,19 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// initial entry.js bundling test
+	// document.write("It works. The edit bundling is working");
+
+	// extra file content.js routing test
+	document.write(__webpack_require__(1));
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
-	document.write("It works. The edit bundling is working");
+	module.exports = "It works from content.js.";
 
 /***/ }
 /******/ ]);
