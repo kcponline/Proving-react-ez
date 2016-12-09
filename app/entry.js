@@ -3,4 +3,7 @@
 
 // extra file content.js routing test of modules. only this file
 // is executed and requires all other modules
+// the path remains the same even when moved together
+// with the main entry.js file
+// the cli has to be webpack ./app/entry.js bundle.js
 document.write(require("./content.js"));
