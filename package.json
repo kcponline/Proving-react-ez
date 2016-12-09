@@ -2,7 +2,7 @@
   "name": "Proving-react-ez",
   "version": "1.0.0",
   "description": "Building with React from Scratch",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
