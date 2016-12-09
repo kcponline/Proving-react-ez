@@ -1,0 +1,1 @@
+document.write("It works. The edit bundling is working");
