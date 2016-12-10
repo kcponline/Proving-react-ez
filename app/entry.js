@@ -12,8 +12,8 @@ ReactDOM.render(
 )
 
 	// example 7 - react rendering modular extra file
-// var contents = require("./content.js");
-// module.exports = contents;
+// var content = require("./content.js");
+// module.exports = content;
 
 	// example 6 - simple boot strap className
 // var React = require('react');
