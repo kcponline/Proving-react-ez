@@ -1,6 +1,19 @@
+	// example 8 - react rendering modular extra file
+// Include the Main React Dependencies
+var React = require('react');
+var ReactDOM = require('react-dom');
+var Content = require('./content.js')
+
+ReactDOM.render(
+
+	/*Here we deploy the header component as though it were any other HTML element.*/
+	<Content />,
+	document.getElementById('app')
+)
+
 	// example 7 - react rendering modular extra file
-var contents = require("./content.js");
-module.exports = contents;
+// var contents = require("./content.js");
+// module.exports = contents;
 
 	// example 6 - simple boot strap className
 // var React = require('react');
