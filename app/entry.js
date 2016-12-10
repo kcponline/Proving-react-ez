@@ -14,7 +14,7 @@ ReactDOM.render(
 			<li>refresh the webpage to visualize the updates</li>
 			<li>for multiple elements, put them in div and must end with comma</li>
 			<li>remember to exit webpack with ctrl c when finished</li>
-			<li>test1</li>
+			<li>when switching branch, redo webpack -w to recompile bundle.js to visualize the branch</li>
 		</ol>
 	</div>,
 	document.getElementById('app')
