@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kcponline/Proving-react-ez#readme",
   "dependencies": {
+    "moments": "0.0.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },

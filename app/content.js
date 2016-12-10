@@ -1,10 +1,12 @@
 	// example 3 - react module and jsx
 var React = require('react');
 var ReactDOM = require('react-dom');
+var moment = require('moment');
 
 var name = "Omar";
 var num1 = 1;
 var num2 = 2;
+var dob = moment("1989-02-14", "YYYY-MM-DD");
 
 module.exports = ReactDOM.render(
 	<div className='panel panel-default'>
@@ -29,7 +31,11 @@ module.exports = ReactDOM.render(
 			<li>I can do math: {num1 + num2}.</li>
 			<li>I can generate random numbers: {Math.floor(Math.random() * 10) + 1  }, 
 			{Math.floor(Math.random() * 10) + 1  }, {Math.floor(Math.random() * 10) + 1  }.</li>
+			<hr />
+			<h1>React with MOMENTS</h1>
 			<li>I can even reverse my name: {name.split("").reverse()}</li>
+			<li>I was born on {dob.format("MM/DD/YYYY")}</li>
+			<li>That makes me: {dob.fromNow(true)} old.</li>
 		</ol>
 	</div>,
 	document.getElementById('app')
