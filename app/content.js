@@ -1,11 +1,10 @@
-
 	// example 2 - react modular extra file
 var React = require('react');
 var ReactDOM = require('react-dom');
 
 module.exports = ReactDOM.render(
 	<div className='panel panel-default'>
-		<p>Hello Kent, I can edit this on the fly with react !</p>
+		<p>Branch 1 - React Module Content Rendering</p>
 		<ol>
 			<li>run npm install or npm install webpack -g</li>
 			<li>run webpack -w</li>
