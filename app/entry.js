@@ -4,7 +4,7 @@ var ReactDOM = require('react-dom');
 
 ReactDOM.render(
 	<div className='panel panel-default'>
-		<p>Hello Kent, I can edit this on the fly with react !</p>
+		<p>Branch Master - ReactDOM Rendering entry.js</p>
 		<ol>
 			<li>run npm install or npm install webpack -g</li>
 			<li>run webpack -w</li>
