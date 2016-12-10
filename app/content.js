@@ -1,1 +1,1 @@
-module.exports = "It works from content.js. And after config file and after webpack-dev-server";
+module.exports = "It works from content.js.";
