@@ -1,9 +1,47 @@
+	<!-- example 3 - setup for react -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>React EZ!</title>
+
+	        	<!-- Latest compiled and minified CSS & JS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <!-- This is where React will render the contents it generates -->
+		<div id="app"></div>
+
+		<!-- All of our JS code will be transpiled into this bundle.js file -->
+		<script src="bundle.js"></script>
+
+    </body>
+</html>
+
+	<!-- example 2 - webpack of index.html in subdirectory public -->
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
     </head>
+
     <body>
-    	<!-- ../ is required when bundle.js is in parent directory -->
+    		../ is required when bundle.js is in parent directory
         <script type="text/javascript" src="../bundle.js" charset="utf-8"></script>
     </body>
-</html>
+</html> -->
+
+	<!-- example 1 - webpack with entry.js and index.html in root -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+    		./ is used for when index.html & entry.js are in directory
+        <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+    </body>
+</html> -->

@@ -1,22 +1,36 @@
+    // example 2 - setup for react, jsx, and babel
 module.exports = {
-    // this gets compiled by webpack by babel spec
     entry: "./app/entry.js",
-    // where plain js compile to.
     output: {
-        path: __dirname,
-        filename: "bundle.js"
+        filename: "public/bundle.js"
     },
-    // 
     module: {
         loaders: [
-            { 
-                test: /\.css$/,
-
-                loader: "style!css"
-
-
-
+            {
+                test: /\.jsx?$/,
+                exclude: /(node_moduled|bower_components)/,
+                loader: 'babel',
+                query: {
+                    presets: ['react', 'es2015']
+                }
             }
         ]
     }
 };
+
+    // example 1 - setup for webpack config options
+// module.exports = {
+//     entry: "./app/entry.js",
+//     output: {
+//         path: __dirname,
+//         filename: "bundle.js"
+//     },
+//     module: {
+//         loaders: [
+//             {
+//                 test: /\.css$/,
+//                 loader: "style!css"
+//             }
+//         ]
+//     }
+// };
