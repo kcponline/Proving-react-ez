@@ -2,12 +2,20 @@
 // Include the Main React Dependencies
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Content = require('./content.js')
+var Content = require('./content.js');
+var Header = require('./Components/Header.js');
+var Results = require('./Components/Results.js');
+var Search = require('./Components/Search.js');
 
 ReactDOM.render(
-
-	/*Here we deploy the header component as though it were any other HTML element.*/
-	<Content />,
+	<div>
+		<Header />
+			{/*Here we deploy the header component as though it were any other HTML element.*/}
+		<Content />
+			{/* add other components like HTML elements*/}
+		<Results />
+		<Search />
+	</div>,
 	document.getElementById('app')
 )
 
