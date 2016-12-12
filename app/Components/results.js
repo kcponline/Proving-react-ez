@@ -15,7 +15,7 @@ var Results = React.createClass({
 						<p><em>Components and Sub-components</em></p>
 					</div>
 					{/*This represents the "Parent"*/}
-					<div className="col-md-12">
+					{/*<div className="col-md-12">*/}
 						<div className="panel panel-default">
 							<div className="panel-heading">
 								<h3 className="panel-title text-center">Results Parent</h3>
@@ -27,7 +27,7 @@ var Results = React.createClass({
 								<RC1 />
 							</div>
 						</div>
-					</div>
+					{/*</div>*/}
 				</div>
 			</div>
 		)
