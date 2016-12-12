@@ -1,4 +1,4 @@
-// Include React 
+// example 2 - render static info with components and sub-components
 var React = require('react');
 var RC1 = require('./results-c1')
 
@@ -18,7 +18,8 @@ var Results = React.createClass({
 					{/*<div className="col-md-12">*/}
 						<div className="panel panel-default">
 							<div className="panel-heading">
-								<h3 className="panel-title text-center">Results Parent</h3>
+								<h3 className="panel-title text-center">
+								Results Parent</h3>
 							</div>
 							<div className="panel-body text-center">
 								{/* This is where we'll show the click count for the parent*/}
