@@ -26,8 +26,7 @@ var RC1 = React.createClass({
 			<div className="container">
 				<div className="row">
 				<h3>Everything below is this child component RC1</h3>
-					<div className="col-md-1"></div>
-					<div className="col-md-10">
+					<div className="col-md-12">
 						<div className="jumbotron">
 							<h1>Bob and Bob II</h1>
 							<h2>A lesson on props, states, parents, and 
@@ -39,8 +38,7 @@ var RC1 = React.createClass({
 					<div className="col-md-1"></div>
 				</div>
 				<div className="row">
-					<div className="col-md-1"></div>
-					<div className="col-md-5">
+					<div className="col-md-6">
 						<div className="panel panel-default">
 							<div className="panel-heading">
 								<h3 className="panel-title text-center">
@@ -50,18 +48,18 @@ var RC1 = React.createClass({
 								{/* This is where we'll show the click count for the parent*/}
 								<h1>This is: {this.state.name}</h1>
 								<h2>{this.state.name} is a fantastic artist</h2>
-								<h3>Everything in this panel-body is static 
+								<h3>Everything in this panel-body is dynamic 
 								initialstate of this child component RC1</h3>
 								<hr />
 								<h2>Age: {this.state.age}</h2>
 								<h2>Fuzziness: {this.state.isFuzzy.toString()}</h2>
 								<h2>Artistry: {this.state.artistry}</h2>
-								<h3>Everything in this panel-body is static 
+								<h3>Everything in this panel-body is dynamic 
 								initialstate of this child component RC1</h3>
 							</div>
 						</div>
 					</div>
-					<div className="col-md-5">
+					<div className="col-md-6">
 						<div className="panel panel-default">
 							<div className="panel-body text-center">
 								<img src={this.state.img} width="100%"/>
@@ -75,7 +73,6 @@ var RC1 = React.createClass({
 				<div className="row">
 					<h3>Everything below is grandchild required component 
 					RC1a</h3>
-					<div className="col-md-1"></div>
 					<RC1a 
 					dadsAge={this.state.age} 
 					dadsFuzzy={this.state.isFuzzy} 

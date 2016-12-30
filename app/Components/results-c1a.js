@@ -17,29 +17,30 @@ var RC1a = React.createClass({
 		return(
 			<div className="container">
 				<div className="row">
-					<div className="col-md-5">
+					<div className="col-md-6">
 						<div className="panel panel-default">
 							<div className="panel-heading">
 								<h3 className="panel-title text-center">
 								{this.state.name}</h3>
 							</div>
 							<div className="panel-body text-center">
-								{/* This is where we'll show the click count for the parent*/}
+									{/* This is where we'll show the click count for the parent*/}
 								<h1>This is: {this.state.name}</h1>
 								<h2>{this.state.name} is a terrible artist</h2>
-								<h3>Everything in this panel-body is static 
+								<h3>Everything in this panel-body is dynamic 
 								initialastate of grandchild component RC1a</h3>
 								<hr />
+									{/* This is where the RC1's initialstate parameters become props*/}
 								<h2>Age: {this.props.dadsAge / 8}</h2>
 								<h2>Fuzziness: 
 								{(!(this.props.dadsFuzzy)).toString()}</h2>
 								<h2>Artistry: {this.props.dadsArtistry / 10}</h2>
 								<h3>Everything in this panel-body is dynamic 
-								state of child component RC1</h3>
+								prop of child component RC1</h3>
 							</div>
 						</div>
 					</div>
-					<div className="col-md-5">
+					<div className="col-md-6">
 						<div className="panel panel-default">
 							<div className="panel-body text-center">
 								<img src={this.state.img} width="100%"/>

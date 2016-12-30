@@ -25,7 +25,9 @@ var Results = React.createClass({
 								{/* This is where we'll show the click count for the parent*/}
 								<h2>Hey I'm a Results Parent!</h2>
 								{/*Here we'll deploy the child component. We'll pass it the parent's click counter as a "state"*/}
-								<RC1 />
+								<div className="row"> {/* the row is necessary to keep the boot strap proper symmetrical look*/}
+									<RC1 />
+								</div>
 							</div>
 						</div>
 					{/*</div>*/}
