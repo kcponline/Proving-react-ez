@@ -8,7 +8,7 @@ var Header = React.createClass({
 	render: function(){
 		return(
 			<div className='Jumbotron'>
-				<h1>Branch 1-components - I'm a header!</h1>
+				<h1>Branch 2 - I'm a header!</h1>
 			</div>
 		)
 	}
